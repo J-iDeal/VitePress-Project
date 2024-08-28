@@ -14,7 +14,7 @@ export default defineConfig({
     ['link', { rel: 'icon', href: 'https://vitepress.dev/vitepress-logo-large.webp' }]
   ],
   themeConfig: {
-    logo: '/public/icon/logo.svg', // 网站logo
+    logo: '/assets/icon/logo.svg', // 网站logo
 
     siteTitle: 'iDeal-Press', // 页面标题 隐藏:false/默认使用网站title
 

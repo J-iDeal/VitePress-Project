@@ -17,7 +17,7 @@ hero:
       text: API Examples
       link: /api-examples
   image:
-    src: "./public/images/AI02.png"
+    src: "/assets/images/AI02.png"
     alt: "iDeal-Press"
 
 features:
