@@ -2,7 +2,7 @@
 
 [echarts官网](https://echarts.apache.org/examples/zh/index.html)
 
-![效果图](/public/images/vue/折线图示意图.png)
+![效果图](/assets/images/vue/折线图示意图.png)
 
 1. 安装`echarts`
 
