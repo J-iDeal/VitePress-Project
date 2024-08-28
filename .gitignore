@@ -1,0 +1,8 @@
+# 忽略规则
+# img          //忽略这个img目录
+# index.json    //忽略这个index.json文件
+# log/*           //忽略log下的所有文件
+# css/*.css       //忽略css目录下的.css文件
+
+
+node_modules
