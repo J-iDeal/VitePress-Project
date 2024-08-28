@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
-import sidebar from './sidebar.mjs' // 引入自定义侧边栏配置
-import navbar from './navbar.mjs' // 引入自定义侧边栏配置
+import sidebar from './config/sidebar.mjs' // 引入自定义侧边栏配置
+import navbar from './config/navbar.mjs' // 引入自定义侧边栏配置
 
 // https://vitepress.dev/reference/site-config
 // https://vitepress.dev/reference/default-theme-config

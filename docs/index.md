@@ -6,6 +6,9 @@ hero:
   name: "My Awesome Project"
   text: "A VitePress Site"
   tagline: 将 Markdown 变成优雅的文档，只需几分钟
+  image:
+    src: /assets/images/AI02.png
+    alt: Logo
   actions:
     # theme 按钮主题样式 'brand' | 'alt'
     # text 按钮主题文本
@@ -16,9 +19,6 @@ hero:
     - theme: alt
       text: API Examples
       link: /api-examples
-  image:
-    src: "/assets/images/AI02.png"
-    alt: "iDeal-Press"
 
 features:
   - title: CSS
