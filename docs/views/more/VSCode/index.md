@@ -1,0 +1,1 @@
+[vscode代码片段生成工具](https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode)
