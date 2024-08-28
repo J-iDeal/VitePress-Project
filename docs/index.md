@@ -7,7 +7,8 @@ hero:
   text: "A VitePress Site"
   tagline: 将 Markdown 变成优雅的文档，只需几分钟
   image:
-    src: /assets/images/AI02.png
+    # src: ./public/images/AI02.png
+    src: /logo.png
     alt: Logo
   actions:
     # theme 按钮主题样式 'brand' | 'alt'
