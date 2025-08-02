@@ -34,7 +34,7 @@ export default {
     // codeblocksFold({ route, frontmatter }, true, 400);
     // 启用插件
     imageViewer(route);
-  }
+  },
 } satisfies Theme
 
 
