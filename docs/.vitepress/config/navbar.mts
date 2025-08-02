@@ -7,8 +7,8 @@ export default [
     },
     {
         text: 'CSS',
-        link: '/views/CSS/CodeBlock',
-        activeMatch: '/views/CSS',
+        link: '/views/css/codeBlock',
+        activeMatch: '/views/css',
     },
     {
         text: 'JavaScript',

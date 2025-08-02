@@ -1,13 +1,34 @@
 // 侧边栏配置
 export default {
-
-    '/views/CSS/': [
+    '/views/css/': [
         {
             text: 'CSS',
-            // collapsed: true, // 可折叠
             items: [
-                { text: '代码块', link: '/views/CSS/CodeBlock' },
-                { text: '网格', link: '/views/CSS/Grid' },
+                {
+                    text: '代码块',
+                    link: '/views/css/codeBlock',
+                    collapsed: true,
+                },
+                {
+                    text: '网格',
+                    link: '/views/css/grid',
+                    collapsed: true,
+                },
+                {
+                    text: '文本',
+                    link: '/views/css/text',
+                    collapsed: true,
+                },
+                {
+                    text: '背景',
+                    link: '/views/css/background',
+                    collapsed: true,
+                },
+                {
+                    text: 'NB的代码',
+                    link: '/views/css/nb',
+                    collapsed: true,
+                },
             ],
         }
     ],
@@ -17,16 +38,23 @@ export default {
             items: [
                 {
                     text: '代码块',
-                    collapsed: true, // 可折叠
-                    link: '/views/JavaScript/codeBlock/index.md',
-                    items: [
-                        { text: '介绍', link: '/views/JavaScript/codeBlock/index.md' },
-                        { text: '数组', link: '/views/JavaScript/codeBlock/array.md' },
-                        { text: '回调函数', link: '/views/JavaScript/codeBlock/callbackFunction.md' },
-                    ],
+                    link: '/views/JavaScript/codeBlock.md',
                     activeMatch: '/views/JavaScript/codeBlock',
                 },
-                { text: '深拷贝&浅拷贝', link: '/views/JavaScript/shadeCopy' },
+                {
+                    text: '数组',
+                    collapsed: true, // 可折叠
+                    link: '/views/JavaScript/array/index.md',
+                    items: [
+                        { text: '数组', link: '/views/JavaScript/array/index.md' },
+                        { text: 'API', link: '/views/JavaScript/array/arrayAPI.md' },
+                    ],
+                    activeMatch: '/views/JavaScript/array',
+                },
+                {
+                    text: '深拷贝&浅拷贝',
+                    link: '/views/JavaScript/shadeCopy'
+                },
                 {
                     text: 'promise',
                     collapsed: true, // 可折叠
@@ -84,7 +112,11 @@ export default {
                             link: '/views/Vue/vitePress/Markdown/entities'
                         },
                     ]
-                }
+                },
+                {
+                    text: '插件',
+                    link: '/views/Vue/vitePress/plugins',
+                },
             ]
         },
         {

@@ -125,3 +125,66 @@ const handleSelect = () => {
   <div @click="handleSelect">选中任务：{{ appState.selectedTask }}</div>
 </template>
 ```
+
+<br />
+
+## 兄弟组件通信
+
+**兄弟组件通信：** 使用 mitt 库实现组件间通信。
+
+**安装：mitt**
+
+```cmd
+npm install mitt
+```
+
+**创建 eventBus.js文件：**
+
+```js
+import mitt from "mitt";
+const emitter = mitt();
+export default emitter;
+```
+
+**A 组件：**
+
+```vue
+<script setup>
+import emitter from './eventBus'
+
+function sendMessage() {
+  emitter.emit('custom-message', 'Hello from A')
+}
+</script>
+
+<template>
+  <button @click="sendMessage">发送消息</button>
+</template>
+```
+
+**B 组件：**
+
+```vue
+<script setup>
+import { onMounted, onBeforeUnmount, ref } from 'vue'
+import emitter from './eventBus'
+
+const message = ref('')
+
+function handleMessage(msg) {
+  message.value = msg
+}
+
+onMounted(() => {
+  emitter.on('custom-message', handleMessage)
+})
+
+onBeforeUnmount(() => {
+  emitter.off('custom-message', handleMessage)
+})
+</script>
+
+<template>
+  <div>接收到: {{ message }}</div>
+</template>
+```
