@@ -9,7 +9,7 @@ export default defineConfig({
   title: "iDeal-Press", // 网站标题
   description: "A VitePress Site", //网站描述
   // base: "/VitePress-Project/", // GitHub仓库路径配置 打包前的路径
-  base: "/VitePress-HTML/", // GitHub仓库路径配置 打包后的路径
+  base: "/", // 部署到nginx的路径
 
   head: [ // 网站标签头部配置
     ['link', { rel: 'icon', href: 'https://vitepress.dev/vitepress-logo-large.webp' }]

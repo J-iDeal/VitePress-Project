@@ -4,6 +4,9 @@
 # log/*           //忽略log下的所有文件
 # css/*.css       //忽略css目录下的.css文件
 
+# VitePress 缓存
+docs/.vitepress/cache/
+.docs/.vitepress/.cache/
 
 node_modules
 
